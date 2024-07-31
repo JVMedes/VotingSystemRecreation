@@ -6,5 +6,5 @@ This system is ongoing of remaking a voting system for CMU(City of Malabon Unive
     (like what it used to).
 
         The goal is to make a functioning application that can retrieve and store data to the
-    Microsoft Access. There there should only be dummy data for testing and will not use any
+    Microsoft Access. There should only be dummy data for testing and will not use any
     personal data. 

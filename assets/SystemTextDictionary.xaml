@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <System:String x:Key="TitleStr">SUPREME STUDENT COUNCIL</System:String>
+    <System:String x:Key="YearTtlStr">ELECTION 2021-2022</System:String>
+    <System:String x:Key="SystemHeaderFont">Rockwell Bold</System:String>
+    <System:String x:Key="PosPres">PRESIDENT</System:String>
+    <System:String x:Key="PosVice">VICE PRESIDENT</System:String>
+    <System:String x:Key="PosSec">SECRETARY</System:String>
+    <System:String x:Key="PosTre">TREASURER</System:String>
+    <System:String x:Key="PosAud">AUDITOR</System:String>
+    <System:String x:Key="PosRep">REPRESENTATIVE</System:String>
+    <System:String x:Key="PosCBA">CBA REPRESENTATIVE</System:String>
+    <System:String x:Key="PosCET">CET REPRESENTATIVE</System:String>
+    <System:String x:Key="PosCTE">CTE REPRESENTATIVE</System:String>
+    <System:String x:Key="PosCAS">CAS REPRESENTATIVE</System:String>
+</ResourceDictionary>

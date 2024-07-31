@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VotingSystemRecreation
+namespace VotingSystemRecreation.View
 {
     /// <summary>
-    /// Interaction logic for LoginScreen.xaml
+    /// Interaction logic for VotingPage.xaml
     /// </summary>
-    public partial class LoginScreen : Window
+    public partial class VotingPage : UserControl
     {
-        public LoginScreen()
+        public VotingPage()
         {
             InitializeComponent();
         }
