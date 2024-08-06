@@ -55,25 +55,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="View\AddCourse.xaml.cs">
-      <DependentUpon>AddCourse.xaml</DependentUpon>
+    <Compile Include="ViewModels\LandingPageViewModel.cs" />
+    <Compile Include="ViewModels\LoginPageViewModel.cs" />
+    <Compile Include="ViewModels\ViewCandidateViewModel.cs" />
+    <Compile Include="ViewModels\VoteSummaryViewModel.cs" />
+    <Compile Include="Views\LandingPage.xaml.cs">
+      <DependentUpon>LandingPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AddPosition.xaml.cs">
-      <DependentUpon>AddPosition.xaml</DependentUpon>
+    <Compile Include="Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\AddStudent.xaml.cs">
-      <DependentUpon>AddStudent.xaml</DependentUpon>
+    <Compile Include="Views\ViewCandidate.xaml.cs">
+      <DependentUpon>ViewCandidate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\StudentLandingPage.xaml.cs">
-      <DependentUpon>StudentLandingPage.xaml</DependentUpon>
+    <Compile Include="Views\VoteSummary.xaml.cs">
+      <DependentUpon>VoteSummary.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\VotingPage.xaml.cs">
+    <Compile Include="Views\VotingPage.xaml.cs">
       <DependentUpon>VotingPage.xaml</DependentUpon>
     </Compile>
-    <Page Include="LoginScreen.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\VotingPageViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,9 +84,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="LoginScreen.xaml.cs">
-      <DependentUpon>LoginScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -97,29 +97,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AddCourse.xaml">
+    <Page Include="Views\LandingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AddPosition.xaml">
+    <Page Include="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\AddStudent.xaml">
+    <Page Include="Views\ViewCandidate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\StudentLandingPage.xaml">
+    <Page Include="Views\VoteSummary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\VotingPage.xaml">
+    <Page Include="Views\VotingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\item.cs" />
+    <Compile Include="Models\item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -146,11 +146,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="assets\cmulogo.png" />
+    <Resource Include="assets\a.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MVVM\" />
-    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\cmulogo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VotingSystemRecreation.Model
 {
-    internal class item
+    internal class Item
     {
         public string std_first_name { get; set; }
         public string std_surname { get; set; }

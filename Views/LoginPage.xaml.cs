@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VotingSystemRecreation.ViewModels
+namespace VotingSystemRecreation.Views
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml

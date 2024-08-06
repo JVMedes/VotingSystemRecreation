@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VotingSystemRecreation.ViewModels
 {
-    public class LoginPageViewModel : ViewModelBase
+    internal class VoteSummaryViewModel
     {
     }
 }

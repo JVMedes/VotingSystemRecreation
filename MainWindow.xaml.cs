@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VotingSystemRecreation.ViewModels;
 
 namespace VotingSystemRecreation
 {
@@ -23,6 +24,8 @@ namespace VotingSystemRecreation
         public MainWindow()
         {
             InitializeComponent();
+            ViewCandidateViewModel vm = new ViewCandidateViewModel();
+            DataContext = vm;
         }
     }
 }

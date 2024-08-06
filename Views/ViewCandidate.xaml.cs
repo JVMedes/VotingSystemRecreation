@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VotingSystemRecreation.View
+namespace VotingSystemRecreation.Views
 {
     /// <summary>
-    /// Interaction logic for AddCourse.xaml
+    /// Interaction logic for ViewCandidate.xaml
     /// </summary>
-    public partial class AddCourse : UserControl
+    public partial class ViewCandidate : UserControl
     {
-        public AddCourse()
+        public ViewCandidate()
         {
             InitializeComponent();
         }

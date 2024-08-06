@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace VotingSystemRecreation.ViewModels
 {
-    internal class MainViewModel
+    public class MainViewModel : ViewModelBase
     {
+        public ViewModelBase CurrentViewModel { get; }
+
+        public MainViewModel()
+        {
+            CurrentViewModel = new ViewCandidateViewModel();
+        }
     }
 }
