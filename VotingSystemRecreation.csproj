@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\CommandBase.cs" />
+    <Compile Include="Commands\LandingPageCommand.cs" />
+    <Compile Include="Commands\LoginPageCommand.cs" />
+    <Compile Include="Commands\NavigateCommand.cs" />
+    <Compile Include="Stores\NavigationStore.cs" />
     <Compile Include="ViewModels\LandingPageViewModel.cs" />
     <Compile Include="ViewModels\LoginPageViewModel.cs" />
     <Compile Include="ViewModels\ViewCandidateViewModel.cs" />
@@ -149,6 +154,7 @@
     <Resource Include="assets\a.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CodeDocumentation\CodeMaps\" />
     <Folder Include="MVVM\" />
   </ItemGroup>
   <ItemGroup>

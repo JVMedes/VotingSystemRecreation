@@ -36,7 +36,9 @@
             <Label Foreground="White" FontWeight="Bold" FontSize="19">Password :</Label>
             <TextBox></TextBox>
             <Rectangle Height="30"></Rectangle>
-            <Button Width="200" Height="30" FontSize="20" FontWeight="Bold" Background="{DynamicResource lameYellowBrush}" Foreground="{DynamicResource darkBlueBrush}">Log in</Button>
+            <Button Width="200" Height="30" FontSize="20" FontWeight="Bold" Command="{Binding LogInBtnCommand}" 
+                    Background="{DynamicResource lameYellowBrush}" 
+                    Foreground="{DynamicResource darkBlueBrush}">Log in</Button>
         </StackPanel>
     </Grid>
 </UserControl>

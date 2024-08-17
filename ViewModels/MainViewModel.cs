@@ -3,16 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VotingSystemRecreation.Stores;
 
 namespace VotingSystemRecreation.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        public ViewModelBase CurrentViewModel { get; }
+        private readonly NavigationStore _navigationStore;
+        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
 
-        public MainViewModel()
+        public MainViewModel(NavigationStore navigationStore)
         {
-            CurrentViewModel = new ViewCandidateViewModel();
+            _navigationStore = navigationStore;
+
+            _navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;
+
+        }
+        private void OnCurrentViewModelChanged()
+        {
+            OnPropertyChanged(nameof(CurrentViewModel));
         }
     }
 }

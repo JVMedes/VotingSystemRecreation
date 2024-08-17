@@ -24,8 +24,6 @@ namespace VotingSystemRecreation
         public MainWindow()
         {
             InitializeComponent();
-            ViewCandidateViewModel vm = new ViewCandidateViewModel();
-            DataContext = vm;
         }
     }
 }
